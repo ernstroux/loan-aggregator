@@ -10,7 +10,7 @@ jar is included for convenience, but can be built using
 
 `./lein uberjar`
 
-no extra newlines after the last line is assumed
+no extra newlines in the input file after the last line is assumed
 
 # Why Clojure?
 
