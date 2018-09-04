@@ -17,9 +17,9 @@
   (with-open [w (clojure.java.io/writer filename)]
     (.write w (apply str (interpose "," ["(Network Product Month)" "Amount" "Count"])))
     (.newLine w)
-    (doseq [[k v] out-map]
+    (doseq [[key [amount count]] out-map]
       (let []
-        (.write w (str k "," v))
+        (.write w (apply str (interpose "," [key amount count])))
         (.newLine w)))))
 
 (defn -main

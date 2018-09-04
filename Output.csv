@@ -1,9 +1,9 @@
 (Network Product Month),Amount,Count
-("Network 1" "Loan Product 1" "Mar"),[1000.00M 1]
-("Network 2" "Loan Product 1" "Mar"),[1122.00M 1]
-("Network 3" "Loan Product 2" "Mar"),[2084.00M 1]
-("Network 1" "Loan Product 2" "Mar"),[3098.00M 1]
-("Network 2" "Loan Product 1" "Apr"),[5671.00M 1]
-("Network 3" "Loan Product 3" "Apr"),[1928.00M 1]
-("Network 2" "Loan Product 3" "Apr"),[1747.00M 1]
-("Network 1" "Loan Product 2" "Apr"),[1801.00M 1]
+("Network 1" "Loan Product 1" "Mar"),1000.00,1
+("Network 2" "Loan Product 1" "Mar"),1122.00,1
+("Network 3" "Loan Product 2" "Mar"),2084.00,1
+("Network 1" "Loan Product 2" "Mar"),3098.00,1
+("Network 2" "Loan Product 1" "Apr"),5671.00,1
+("Network 3" "Loan Product 3" "Apr"),1928.00,1
+("Network 2" "Loan Product 3" "Apr"),1747.00,1
+("Network 1" "Loan Product 2" "Apr"),1801.00,1
