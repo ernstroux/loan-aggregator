@@ -12,6 +12,16 @@
                           :product product
                           :date    date})))))
 
+(defn write-output-file
+  [out-map filename]
+  (with-open [w (clojure.java.io/writer filename)]
+    (.write w (apply str (interpose "," ["(Network Product Month)" "Amount" "Count"])))
+    (.newLine w)
+    (doseq [[k v] out-map]
+      (let []
+        (.write w (str k "," v))
+        (.newLine w)))))
+
 (defn -main
   [& [arg]]
   (with-open [rdr (if (= arg "--test")
@@ -26,11 +36,5 @@
                               (assoc out-map key [(+ acc-amount (bigdec amount)) (inc count)])))
                           {}
                           lines)]
-      (with-open [w (clojure.java.io/writer "Output.csv")]
-        (.write w (apply str (interpose "," ["(Network Product Month)" "Amount" "Count"])))
-        (.newLine w)
-        (doseq [[k v] out-map]
-          (let []
-            (.write w (str k "," v))
-            (.newLine w))))))
+      (write-output-file out-map "Output.csv")))
   (println "Done processing"))
